@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        form{
+            display: block;
+            margin-top: 5%;
+        }
+        input{
+            padding: 5px 15px;
+            width: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>Formulario</h1> 
@@ -15,7 +25,7 @@
     4. entype para indicar que tipo de archivos se envia desde el formulario. Ej: entype= "multipart/form-data"
     
     -->
-    <form action="primer.html" method="get">
+    <form action="primer.html" method="get" enctype="multipart/form-data">
        <!-- entrada de datos
         1. etiqueta<input>: text, number, tel, email, file, range, submit
         2. label-> etiqueta para indicar el nombre del input que se muestra
@@ -42,9 +52,27 @@
       <br>
       <!-- En ocasiones no utilizamos la etiqueta label sino que indicamos al usuario que estamos solicitando a traves del placeholder -->
       <input type="email" placeholder="Indica tu Email" id="email" name="email" required>
+      <br>
+      <!-- Insertar un archivo es importante el atributo accept -->
+      <label for="archivo">Inserta tu CV</label>
+      <input type="file" id="archivo" accept=".pdf, .docx">
+      <!-- Agrupar diferentes etiquetas y monstralas en bloque 
+        <fielstet> abre el grupo
+            <legend> indica un titulo del grupo (no es obligatoriao)
+         -->
+
+        <fieldset>
+            <legend>Datos Academicos</legend>
+            <input type="text" placeholder="Titulación" id="titulacion">
+            <label for="fechaT">Fecha Titulación</label>
+            <!-- Etiqueta date que muestra un calendario para recoger un dato tipo fecha -->
+            <input type="date" placeholder="fechaT" name="fechaT">
+            <input type="text" placeholder="Institución" name="institucion">
+        </fieldset>
+   
       
 
-
+      
       <input type="submit" value="Enviar Formulario">
       
        
