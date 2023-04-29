@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        #zorro1, #lobos,#ciudad,.galeria{
+            border: 2px solid brown;
+            width: 350px;
+            margin: 25px;
+            /*opacity: 0.5; su valor esta entre 0 (lo oculta) y 1 (se ve tal cual)*/
+
+        }
+        #bloque1, figure{
+            padding: 15px;
+            border: 1px dotted lightblue;
+            width: 90%;
+            text-align: center;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Imagenes en HTML</h1>
+    <!--Atributos de las imagenes
+    alt: texto identificativo para cuando no se encuentra la imagen por la accesibilidad
+    width: ancho de la imagen
+    heigth: alto de la imagen
+    -->
+
+    <img src="img/zorro-sinfondo-optimizado.webp" alt="Zorro marrón con cara de tristeza" id="zorro1">
+    <img src="img/lobos.jpg" alt="Pareja de lobos blancos en un bosque" id="lobos">
+
+    <div id="bloque1">
+        <p>Bloque para separar las imagenes</p>
+        <img src="img/ciudad.jpg" alt="Ciudad en el amanecer" id="ciudad">
+    </div>
+
+    <figure>
+        <figcaption>Paisajes</figcaption>
+        <img src="img/arbol.jpg" alt="Arbol solitario" class="galeria">
+        <img src="img/aurora_boreal.jpg" alt="Aurora boreal en las montañas" class="galeria">
+        <img src="img/ciudad.jpg" alt="Ciudad amaneciendo" class="galeria">
+          
+    </figure>
+
+
+
+
+</body>
+</html>

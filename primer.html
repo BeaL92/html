@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- TITULOS EN HTML -->
-    <h1>Título de nivel 1</h1>
+    <h1 id="elementoH1" name="elementoH1">Título de nivel 1</h1>
     <h2>Título de nivel 2</h2>
     <h3>Título de nivel 3</h3>
     <h4>Título de nivel 4</h4>
@@ -151,8 +151,43 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolore reprehenderit minima fugit amet cum incidunt rem. Quod totam voluptate consectetur, culpa optio voluptatem architecto commodi dolor! Aspernatur, asperiores vero.</p>
     </details>
     <br>
-    <!--IMPORTANTE: ENLACES ENTRE PÁGINAS INTERNA E INTERNAS-->
-    <a href="https://google.es" title="Ir a Google" target="_blank">Voy a ir a la pagina de Google</a>
+    
+   
+
+    <!--Los link importantes en las páginas web
+        1. Me crean enlaces externos (a otra url,si la url es externa: https//google.es)
+        2. Puedo crear enlaces internos en el mismo proyecto, por eje: del index.html enlazar con contacto.html
+        3. Puedo crear enlaces en la misma pagina. Ejem, del pie de página enlazar la header
+    -->
+    <!-- Ejemplo 1. Enlaces a páginas externas - lo recomendable es usar la url completa-->
+    <a href="https://google.es" title="Ir a Google" target="_blank">Voy a ir a la pagina de Google</a> <br>
+
+    <!-- Ejemplo 2. Crear enlaces internos, -->
+    <a href="segundo.html" title="Segunda Página" target="_blank">Ir a un enlace del proyecto</a> <br>
+
+    <!--Ejemplo 3. Crear enlaces en la misma página, utilizando como atributo de llamada el id -->
+    <a href="#elementoH1" tittle="Ir a H1">Ir a H1</a>
+    <!--id elementoH1 encabezadoPaginaPrimera-->
+    <!--name elementoH1 encabezadoPaginaPrimera-->
+    <br>
+    <a href="#">Recagar página</a>
+    <br>
+    <a href="../+Cotas/index.html">Mis mascotas</a><!-- con .../ subimos un nivele en el directorio o carpeta-->
+    <br>
+    <!--Enlace a un archivo-->
+    <a href="etiqueta-html.pdf" target="_blank">Mostrar todas las etiquetas HTML</a>
+    <br>
+    <a href="img/favicon.png" target="_blank">Mostrar mi favicon</a>
+    <br>
+    <a href="archivo-prueba.docx" target="_blank">Enlace a un archivo de Word</a>
+    <br>
+    <!--Enlace para enviar Correo Electrónico-->
+    <a href="malito:b.lopez@ceatformación.com">Enviar Email</a>
+    <br>
+    <!-- Enlazar una página a traves de una imagen-->
+    <a href="pruebas/tercero.html"><img src="img/favicon.png"></a>
+    
+
 
 
 
@@ -169,7 +204,7 @@
         <h2 title="Indice">Indice</h2>
         <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odit quisquam sed velit illum natus explicabo saepe amet, quod rem deleniti quae porro harum suscipit quo, libero voluptatum adipisci repellendus?</small>
     </footer>
-
+    
 
 
   
