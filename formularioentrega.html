@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de suscripcion</title>
+</head>
+<body>
+    <h1>FORMULARIO DE SUSCRIPCIÓN</h1>
+    <br>
+    <fieldset>
+        <legend>Datos para el Registro</legend>
+        <p><label for="email">Correo electrónico: *</label>
+        <input type="email" placeholder="tunombre@dominio.com" id="email" name="email" required></p>
+        
+        <p><label for="password">Contraseña: *</label>
+        <input type="password" id="password" name="password" maxlength="10" minlength="8" required></p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <p><label for="nombre">Nombre: *</label>
+        <input type="text"  id="nombre" name="nombre" placeholder="Tú nombre" minlength="3"  requiered pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+" required></p>
+        <p><label for="apellido">Apellidos: *</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Tús Apellidos" minlength="5" max="25"  requiered pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]-" requited></p>
+        <p><label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required pattern="[6-9]{1}[0-9]{8}" autocomplete></p>
+        <p><label for="sexo"></label>
+        Mujer<input type="radio" name="sexo" id="mujer">
+        Hombre<input type="radio" name="sexo" id="hombre">
+        <p><label for="buscar">Buscar</label>
+            <input type="search" name="buscar" id="buscar" placeholder="Ej:Portátil"></p>
+        <p><label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha" name="fecha"></p>
+        <p><label for="fechaYhora">Fecha y hora de nacimiento de tu padre</label>
+            <input type="datatime-local" id="fechaYhora" name="fechaYhora" placeholder="dd/mm/aaaa --:--"></p>
+        <p><label for="mes">¿En que mes te gustaria viajar?</label>
+            <input type="month" id="mes" name="mes"></p>
+        <p></p>
+
+    </fieldset>
+    
+</body>
+</html>

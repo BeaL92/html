@@ -68,12 +68,100 @@
             <!-- Etiqueta date que muestra un calendario para recoger un dato tipo fecha -->
             <input type="date" placeholder="fechaT" name="fechaT">
             <input type="text" placeholder="Institución" name="institucion">
+            <!-- Práctica no recomendada -->
+            <p>Nivel de conocimiento</p>
+            <!-- el atributo desactiva el campo y, por lo tanto, los vistantes ya no lo pueden utilizar -->
+            <input type="text" disabled>
+            <!-- El atributo readonly indica que el campo es solo de lectura -->
+            <input type="text" value="17:09 h" readonly>
+            <!-- El atributo hidden oculta el campo de entrada -->
+            <input type="text" value="5000" hidden>
+            <!-- Textarea crear mensajes, comentarios o textos extensos -->
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" ></textarea>
+            <!-- Elementos de grupo RadioBotton-->
+            <br>
+            <label>Seleccione el nivel de Inglés</label>
+            <br>
+            Básico<input type="radio" name="nivelIngles" value="basico" checked>
+            Intermedio<input type="radio" name="nivelIngles" value="intermedio">
+            Avanzado<input type="radio" name="nivelIngles" value="avanzado">
         </fieldset>
+
+        <fieldset>
+            <label for="username">Nombre de usuario</label>
+            <input type="text" name="username" id="username">
+            <!-- tipo de input type password para ocultar las contraseñas -->
+            <label for="password">Indica la contraseña:</label>
+            <input type="password" id="password" name="password" maxlength="10" minlength="8">
+            <label for="password">Repite tu contraseña:</label>
+            <input type="password" id="password" name="password" maxlength="10" minlength="8">
+            <label for="horario">Horario de Conexión:</label>
+            <!-- Etiqueta que nos permite crear una lista despleglable con opciones unida una etiqueta por opcion <opcion>
+                Atributos:
+                value: valor que se envia con el formulario, no es obligatorio.
+                selected: que esta preseleccionado
+             -->
+             <br>
+             <select name="horario" id="horario">
+                <option></option>
+                <option value="despertino">Mañana</option>
+                <option value="mediodia">Mediodia</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+             </select>
+             <!-- Cuando se necesita que pueda seleccionar varias opciones, se debe indicar al select el atributo multiple -> Su presencia indica que el usiario puede seleccionar varios valores --> 
+             <label for="dispositivo">Dispositivo de Conexón</label>
+             <select name="dispositivo" id="dispositivo" multiple>
+                <option value="movil" selected>Smartphone</option>
+                <option value="tablet">Tablet</option>
+                <option value="pc">Ordenador</option>
+                <option value="smartv">Smart TV</option>
+             </select>
+             <!--Las casillas de selecion multiple-> En las interfaces de las aplicaciones y en los formularios, las casillas de selección se utilizan para tener una selección multiple. De nuevo, es necesario utilizar el elmento <input> con type="checkbox"  -->
+             <br>
+             <p>Jornada Seleccionada</p>
+             <label for="jornada">Mañana</label>
+             <input type="checkbox" id="jornada" name="jornada" value="morning">
+             <label for="tarde">Tarde</label>
+             <input type="checkbox" name="tarde" id="tarde" value="tarde">
+             <label for="indiferente">Indiferente</label>
+             <input type="checkbox" name="indiferente" id="indiferente" value="indiferente">
+             <label for="teletrabajo">Teletrabajo</label>
+             <input type="checkbox" name="teletrabajo" id="teletrabajo" value="teletrabajo">
+
+             <!-- Para seleccionar colores, podemos utilizar un input type="color" -->
+             <label for="colorPreferido">Color Preferido</label>
+             <input type="color" name="colorPreferido" id="colorPreferido" value="#0000">
+             <br>
+             <!-- input para entradas URL -->
+             <label for="tuWeb">Página Web Personal</label>
+             <input type="url" name="tuWeb" id="tuWeb">
+             <br>
+             <label for="mes">Seleciona mes:</label>
+             <input type="month" id="mes" name="mes">
+             <br>
+             <!-- Etiquetas de mes, semanas, horas, dia-mes-año -->
+             <p>Etiquetas de tiempo</p>
+             <label for="hora">Hora de comida</label>
+             <input type="time" id="hora" name="hora">
+             <label for="fechaYhora">Fecha y hora</label>
+             <input type="datatime-local" id="fechaYhora" name="fechaYhora">
+             <label for="semana">Semana</label>
+             <input type="week" id="semana" name="semana">
+             <p><label for="buscar">Buscar</label>
+            <input type="search" name="buscar" id="buscar" placeholder="Ej:po"></p>
+            <p><label for="fecha">Fecha de nacimiento</label>
+            <input type="" id="fecha" name="fecha" placeholder="dd/mm/aaaa"></p>
+            </fieldset>
+
+        
    
       
 
       
       <input type="submit" value="Enviar Formulario">
+      <input type="text" value="Limpiar Fromulario">
       
        
 
