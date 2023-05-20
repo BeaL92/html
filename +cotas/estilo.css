@@ -1,0 +1,68 @@
+section{
+    width: 80%;
+    margin: auto;
+}
+.div{
+    display: block;
+   
+}
+
+
+.menuP{
+    background-color: green;
+    padding: 1px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    padding: 25px;
+    width: 25%;
+}
+
+
+a{
+    text-decoration: none;
+    border: 1px solid green;
+    padding: 25px;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+a:hover{
+    background-color: green;
+    color: white;
+    letter-spacing: 5px;
+ 
+
+}
+.p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;;
+    
+}
+table,th,td{
+    margin: auto;
+    padding: 15px;
+    border: 1px solid white;
+    border-collapse:separate; 
+    background-color: green;
+    color: white;
+   
+}
+h1{
+    text-align: center;
+
+}
+input{
+    padding: 5px 5px;
+    width: 300px;
+}
+ul{
+   
+}
+
+
+
